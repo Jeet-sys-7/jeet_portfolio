@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeet | Coder & Video Editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Jeet.</div>
+       <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn">Light Mode</button>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="syntax-comment">Welcome to my portfolio</p>
+                <h1>Hi, I'm <span class="accent">Jeet</span></h1>
+                <h2>Coder & Video Editor</h2>
+                <p>Bringing creative visions to life through dynamic editing and clean codes.</p>
+                <br>
+                <a href="#contact" class="btn outline-btn">Contact Me</a>
+            </div>
+            <div class="hero-image">
+                <img src="Profile.jpeg" alt="Jeet" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hey, my name is Jeet, and I am a professional video editor specialized in motion design. I create storytelling-driven videos that help the audience clearly understand and connect with the message. Alongside editing, I’m actively developing my coding skills, strengthening my foundation in problem-solving and data structures every day.</p>
+                <div class="skills">
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Premiere Pro</span>
+                    <span class="skill-tag">After Effects</span>
+                    <span class="skill-tag">Video Production</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Looking for a developer or an editor for your next project? Fill out the form below and I'll get back to you soon.</p>
+            
+            <form action="https://formspree.io/f/xzdjevne" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jeet. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

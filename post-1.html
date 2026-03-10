@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeet | Post Title Here</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Jeet.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="blog.html" class="accent">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn">Light Mode</button>
+    </nav>
+
+    <section class="page-section">
+        <div class="container article-container">
+            
+            <a href="blog.html" class="back-link">&larr; Back to Blog</a>
+            
+            <header class="article-header">
+                <span class="blog-date">March 10, 2026</span>
+                <h1>How to Create a Black & White Dotted Effect in After Effects</h1>
+                <div class="skills" style="margin-top: 15px;">
+                    <span class="skill-tag">Video Editing</span>
+                    <span class="skill-tag">Tutorial</span>
+                </div>
+            </header>
+
+            <div class="article-content">
+                <p>Welcome to my first blog post. When editing cinematic clips, sometimes you want to add a highly stylized, retro, or technical look to your footage. The black and white dotted effect (often called a halftone effect) is perfect for this.</p>
+                
+                <h3>Step 1: Setting up the composition</h3>
+                <p>First, drag your footage into a new composition. You want to make sure your contrast is relatively high before applying the effect, so I recommend adding a basic Lumetri Color effect first to crush the blacks and boost the highlights.</p>
+                
+                <blockquote>
+                    "The key to a good halftone effect is strong contrast in your base footage. Flat footage will result in muddy dots."
+                </blockquote>
+
+                <h3>Step 2: Adding the Code (Example)</h3>
+                <p>If you are automating some of your After Effects scripts using ExtendScript, it might look something like this:</p>
+                
+                <pre><code>
+// Example ExtendScript for After Effects
+var comp = app.project.activeItem;
+var layer = comp.layer(1);
+var effect = layer.Effects.addProperty("CC Halftone");
+effect.property("Radius").setValue(5);
+                </code></pre>
+
+                <p>Once you apply the effect, adjust the radius until the dots are visible but don't completely destroy the image clarity. Export and you are good to go!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Jeet. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
